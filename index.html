@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livro de Regras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <h1>LIVRO DE REGRAS</h1>
+                <div class="options-container">
+                    <button class="audio-button" onclick="playAudio('audio-pt')">PT</button>
+                    <button class="audio-button" onclick="playAudio('audio-eng')">ENG</button>
+                </div>
+            </div>
+            <div class="card-back">
+                <h2>Instruções</h2>
+                <p>clique em cada um de uma vez;</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Áudios -->
+    <audio id="audio-pt" src="audio-pt.mp3"></audio>
+    <audio id="audio-eng" src="audio-eng.mp3"></audio>
+
+    <script>
+        function playAudio(audioId) {
+            const audio = document.getElementById(audioId);
+            audio.currentTime = 0; // Reinicia o áudio
+            audio.play(); // Toca o áudio
+        }
+    </script>
+</body>
+</html>

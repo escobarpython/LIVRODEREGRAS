@@ -1,0 +1,47 @@
+body {
+    background-color: #000; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #222; /* Fundo escuro da carta */
+    border-radius: 15px; /* Bordas arredondadas da carta */
+    padding: 20px; /* Espaçamento interno da carta */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar efeito de profundidade */
+    text-align: center;
+}
+
+.square {
+    width: 200px; /* Largura do quadrado */
+    height: 200px; /* Altura do quadrado */
+    background-color: #333; /* Cor escura para o quadrado */
+    border: 2px solid #fff; /* Contorno branco */
+    border-radius: 10px; /* Bordas arredondadas do quadrado */
+    margin: 20px auto; /* Espaçamento em torno do quadrado */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.audio-button {
+    background-color: #555; /* Fundo escuro para os botões */
+    color: #fff; /* Texto branco */
+    border: 2px solid #fff; /* Contorno branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas dos botões */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.audio-button:hover {
+    background-color: #777; /* Cor de fundo mais clara ao passar o mouse */
+}
